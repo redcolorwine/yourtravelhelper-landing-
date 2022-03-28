@@ -1,0 +1,385 @@
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.firstBlock {
+    height: 100vh;
+    width: 100vw;
+    background: url('../media/camping.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+.firstBlock h1 {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-family: 'Century Gothic';
+    font-size: 100pt;
+    font-weight: 900;
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.secondBlock {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textSB {
+    width: 700px;
+}
+
+.textSB h1 {
+    font-size: 50pt;
+    font-family: 'Century Gothic';
+}
+
+.textSB p {
+    font-size: 24pt;
+    font-family: consolas;
+
+}
+
+.imgSB img {
+    width: 700px;
+    height: 800px;
+}
+
+.thirdBlock {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(32, 34, 41);
+}
+
+.textTB {
+    padding-top: 10%;
+    margin-left: 10%;
+    width: 1300px;
+}
+
+.textTB h1 {
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 50pt;
+}
+
+.textTB p {
+    color: white;
+    font-size: 20pt;
+    font-family: 'Century Gothic';
+}
+
+.imgTB {
+    margin-left: 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgTB img {
+    height: 130px;
+    width: 150px;
+}
+
+.fourthBlock {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourthBlock h1 {
+    font-family: 'Century Gothic';
+    font-size: 40pt;
+}
+
+.imgArea img {
+    height: 250px;
+    width: 250px;
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.imgArea img:hover {
+    transform: scale(1.5, 1.5);
+}
+
+.imgArea {
+    height: 768px;
+    width: 768px;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feedback {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    color: white;
+    font-family: 'Century Gothic';
+    background-color: rgb(32, 34, 41);
+}
+
+.feedback h1 {
+    font-size: 75pt;
+}
+
+.links {
+    margin-left: 50px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20pt;
+    transition: 0.5s;
+}
+
+.links a:hover {
+    color: bisque;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .textSB {
+        width: 500px;
+    }
+
+    .textSB h1 {
+        font-size: 40pt;
+    }
+
+    .textSB p {
+        font-size: 16pt;
+    }
+
+    .imgSB img {
+        width: 500px;
+        height: 600px;
+    }
+
+    .textTB {
+        width: 1100px;
+    }
+
+    .textTB h1 {
+        font-size: 40pt;
+    }
+
+    .textTB p {
+        font-size: 16pt;
+    }
+
+    .imgTB {
+        margin-left: 10%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .imgTB img {
+        height: 90px;
+        width: 110px;
+    }
+
+
+    .fourthBlock h1 {
+        font-family: 'Century Gothic';
+        font-size: 30pt;
+    }
+
+    .imgArea img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .imgArea img:hover {
+        transform: scale(1.5, 1.5);
+    }
+
+    .imgArea {
+        height: 618px;
+        width: 618px;
+    }
+
+    .feedback h1 {
+        font-size: 55pt;
+    }
+
+    .links a {
+        font-size: 16pt;
+    }
+
+    .links a:hover {
+        color: bisque;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .firstBlock {
+        height: 100%;
+        width: 100%;
+    }
+
+    .firstBlock h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 25pt;
+        text-align: right;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .secondBlock {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textSB {
+        width: 100%;
+    }
+
+    .textSB h1 {
+        padding-top: 40px;
+        font-size: 25pt;
+        font-family: 'Century Gothic';
+    }
+
+    .textSB p {
+        font-size: 14pt;
+        font-family: consolas;
+
+    }
+
+    .imgSB img {
+        width: 320px;
+        height: 400px;
+        border-radius: 10px;
+    }
+
+
+    .thirdBlock {
+        height: auto;
+        width: 100%;
+        background-color: rgb(32, 34, 41);
+    }
+
+    .textTB {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .textTB h1 {
+        color: white;
+        font-family: 'Century Gothic';
+        font-size: 25pt;
+    }
+
+    .textTB p {
+        color: white;
+        font-size: 14pt;
+        font-family: 'Century Gothic';
+    }
+
+    .imgTB {
+        margin-top: 10%;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .imgTB img {
+        height: 10%;
+        width: 10%;
+    }
+
+    .fourthBlock {
+        height: auto;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .fourthBlock h1 {
+        font-family: 'Century Gothic';
+        font-size: 25pt;
+    }
+
+    .imgArea img {
+        height: 100px;
+        width: 100px;
+        padding: 2px;
+        transition: 0.5s;
+    }
+
+    .imgArea img:hover {
+        transform: scale(1.2, 1.2);
+    }
+
+    .imgArea {
+        height: 318px;
+        width: 318px;
+        padding-top: 40px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feedback {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50vh;
+        color: white;
+        font-family: 'Century Gothic';
+        background-color: rgb(32, 34, 41);
+    }
+
+    .feedback h1 {
+        font-size: 25pt;
+    }
+
+    .links {
+        margin-left: 50px;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: white;
+        font-size: 12pt;
+        transition: 0.5s;
+    }
+
+    .links a:hover {
+        color: bisque;
+    }
+
+}
